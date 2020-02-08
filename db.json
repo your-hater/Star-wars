@@ -1,0 +1,40 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "name": "Star Wars: Episode IV – A New Hope",
+      "info": "The original eponymous Star Wars film[c] opens with a Rebel spaceship being intercepted by the Empire above the desert planet of Tatooine. Aboard, the deadly Imperial agent Darth Vader and his stormtroopers capture Princess Leia Organa, a secret member of the rebellion. Before her capture, Leia makes sure the droid R2-D2 will escape with stolen Imperial blueprints and a holographic message for the Jedi Knight Obi-Wan Kenobi, who has been living in exile on Tatooine. Along with C-3PO, R2-D2 falls under the ownership of Luke Skywalker, a farmboy who has been raised by his aunt and uncle. Luke helps the droids locate Obi-Wan, now a solitary old hermit known as Ben Kenobi. He reveals himself as a friend of Luke's absent father, Anakin Skywalker, who was Obi-Wan's Jedi apprentice until being murdered by Vader. He tells Luke he must also become a Jedi. After discovering his family's homestead has been destroyed by the Empire, they hire the smuggler Han Solo, his Wookiee co-pilot Chewbacca and their space freighter, the Millennium Falcon. They discover that Leia's homeworld of Alderaan has been destroyed, and are soon captured by the planet-destroying Death Star. While Obi-Wan disables its tractor beam, Luke and Han rescue the captive Princess Leia. Finally, they deliver the Death Star plans to the Rebel Alliance with the hope of exploiting a weakness.",
+      "img": "../assets/images/posters/episodeIV.jpg",
+      "releaseDate": "May 25, 1977",
+      "director": "George Lucas",
+      "money": {
+        "budget": "$11 million",
+        "earned": "$775.5 million"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Episode V – The Empire Strikes Back",
+      "info": "Set three years after the destruction of the Death Star,[18] The Empire Strikes Back begins with the Empire forcing the Rebel Alliance to evacuate its secret base on Hoth. Instructed by Obi-Wan's spirit, Luke travels to the swamp world of Dagobah to find the exiled Jedi Master Yoda. Luke's Jedi training is interrupted by Vader, who lures him into a trap by capturing Han and Leia at Cloud City, governed by Han's old friend Lando. During a fierce duel, Vader reveals a shocking truth about Luke's father.",
+      "img": "../assets/images/posters/episodeV.jpg",
+      "releaseDate": "May 21, 1980",
+      "director": "Irvin Kershner",
+      "money": {
+        "budget": "$23 million",
+        "earned": "$547.9 million"
+      }
+    },
+    {
+      "id": 3,
+      "name": "",
+      "info": "",
+      "img": "../assets/images/posters/episodeIV.jpg",
+      "releaseDate": "",
+      "director": "",
+      "money": {
+        "budget": "",
+        "earned": ""
+      }
+    }
+  ]
+}
