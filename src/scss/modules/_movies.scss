@@ -1,0 +1,50 @@
+.movie {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    &__card {
+        width: 30%;
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        height: 250px;
+        background: url('../assets/images/bg.webp') no-repeat;
+        background-size: 350%;
+        text-align: center;
+        margin: 0 -17px;
+
+        img {
+            @include size(auto, 100%);
+            margin-top: 0!important;
+        }
+    }
+
+    .mat-card-content {
+        margin: 0;
+    }
+
+    .mat-card-actions {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, .4);
+    padding-top: 15px;
+
+    .mat-select-arrow,
+    .mat-form-field-label,
+    .mat-select-value-text {
+        color: #fff;
+    }
+
+    .mat-form-field-underline {
+        background-color: #fff;
+    }
+}

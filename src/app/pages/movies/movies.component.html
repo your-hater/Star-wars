@@ -1,0 +1,56 @@
+<div class="filters">
+    <mat-form-field>
+        <mat-label>Director: </mat-label>
+        <mat-select (selectionChange)="filterByDirector($event.value)">
+            <mat-option *ngFor="let dir of directors" 
+                        [value]="dir">
+                {{dir}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="filters__search">
+        <mat-label>Search movies by name</mat-label>
+        <input matInput placeholder="Star Wars" [(ngModel)]="searchName"> 
+    </mat-form-field>
+</div>
+
+<button mat-raised-button
+        color="accent"
+        (click)="updateMovie()">
+        Add new movie
+    </button>
+
+<div class="movie">
+    <mat-card *ngFor="let movie of filteredMovies | filter: searchName" class="movie__card">
+        <mat-card-header>
+            <mat-card-title>
+                {{movie.name | uppercase}}
+            </mat-card-title>
+
+            <mat-card-subtitle>
+                <p><span>Release Date: </span>{{movie.releaseDate}}</p>
+            </mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+            <div class="movie__img">
+                <img mat-card-image src="{{movie.img}}" alt="{{movie.name}} Poster">
+            </div>
+        </mat-card-content>
+
+        <mat-card-actions>
+            <button mat-raised-button
+                    color="primary"
+                    (click)="viewDetails(movie)">
+                View Details
+            </button>
+
+            <button mat-raised-button
+        color="warn"
+        (click)="updateMovie(movie)">
+        Edit
+    </button> 
+        </mat-card-actions>
+    </mat-card>
+</div>

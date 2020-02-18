@@ -1,0 +1,36 @@
+<div class="movie-detail">
+    <h2>Title:</h2>
+    <p>{{data.name}}</p>
+</div>
+
+<div class="movie-detail">
+    <h2>Release Date:</h2>
+    <p>{{data.releaseDate}}</p>
+</div>
+
+<div class="movie-detail">
+    <h2>Description:</h2>
+    <p>{{data.info}}</p>
+</div>
+
+<div class="movie-detail">
+    <h2>Director:</h2>
+    <p>{{data.director}}</p>
+</div>
+
+<div class="movie-detail">
+    <h2>Budget:</h2>
+    <p>{{data.money.budget}}</p>
+</div>
+
+<div class="movie-detail">
+    <h2>Earned:</h2>
+    <p>{{data.money.earned}}</p>
+</div>
+
+
+<button mat-raised-button
+        color="primary"
+        (click)="onClose()">
+    Close
+</button>
