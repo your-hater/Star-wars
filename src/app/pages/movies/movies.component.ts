@@ -16,6 +16,7 @@ export class MoviesComponent implements OnInit {
   filteredMovies: IMovie[];
   directors: any = [];
   allMoviesOption: string = 'All movies';
+  searchName: string = '';
 
   constructor(public dialog: MatDialog,
               private alert: MatSnackBar,
